@@ -1,0 +1,41 @@
+# Requirements for Day5 notebooks
+# Generated on 2025-01-13
+# Builds on previous days with focus on agent evaluation, async programming, and financial calculations
+
+# Data Science & Visualization (core dependencies)
+numpy==2.2.6
+pandas==2.3.0
+matplotlib==3.10.0
+
+# HTTP & Web (for API calls and agent communication)
+requests==2.32.3
+
+# AI/ML Libraries (for LLM integration and evaluation)
+openai==1.84.0
+
+# Environment & Configuration (for API keys and settings)
+python-dotenv==1.1.0
+
+# Jupyter & Interactive Computing (for notebook execution)
+ipython==8.29.0
+
+# Token counting and text processing (for LLM evaluation)
+tiktoken==0.8.0
+
+# Retry logic and error handling (for robust agent operations)
+tenacity==9.0.0
+
+# Type hints (for better code quality in agent implementations)
+typing-extensions==4.12.2
+
+# Rich output formatting (for better evaluation result display)
+rich==13.9.4
+
+# Note: The following are built-in Python modules used in Day5:
+# - asyncio (built-in Python 3.7+) - for concurrent agent operations
+# - time (built-in) - for performance evaluation
+# - json (built-in) - for data serialization
+# - os (built-in) - for environment variables
+# - sys (built-in) - for path manipulation
+# - typing (built-in Python 3.5+) - for type annotations
+# - concurrent.futures (built-in Python 3.2+) - for threading operations

@@ -1,0 +1,23 @@
+{
+  "earnings_call_q3_2024": {
+    "filename": "earnings_call_q3_2024.txt",
+    "title": "Earnings Call Q3 2024",
+    "doc_type": "earnings_call",
+    "word_count": 168,
+    "char_count": 1088
+  },
+  "risk_factors_10k": {
+    "filename": "risk_factors_10k.txt",
+    "title": "Risk Factors 10K",
+    "doc_type": "10k_filing",
+    "word_count": 176,
+    "char_count": 1293
+  },
+  "analyst_report": {
+    "filename": "analyst_report.txt",
+    "title": "Analyst Report",
+    "doc_type": "analyst_report",
+    "word_count": 140,
+    "char_count": 971
+  }
+}

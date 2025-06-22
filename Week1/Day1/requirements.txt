@@ -1,0 +1,19 @@
+# Requirements for Day1 notebooks
+# Generated on 2025-01-07
+
+# Data Science & Visualization
+numpy==2.2.6
+pandas==2.3.0
+matplotlib==3.10.3
+
+# HTTP & Web
+requests==2.32.3
+
+# AI/ML Libraries
+openai==1.84.0
+
+# Environment & Configuration
+python-dotenv==1.1.0
+
+# Jupyter & Interactive Computing
+ipython==8.29.0

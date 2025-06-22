@@ -1,0 +1,7 @@
+{
+  "chunk_method": "sentences",
+  "chunk_size": 400,
+  "total_documents": 3,
+  "total_chunks": 10,
+  "embedding_model": "text-embedding-3-small"
+}

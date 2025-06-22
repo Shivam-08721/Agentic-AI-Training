@@ -1,0 +1,36 @@
+# Requirements for Day2 notebooks
+# Generated on 2025-01-07
+# Builds on Day1 requirements with additional dependencies for advanced API techniques
+
+# Data Science & Visualization (from Day1)
+numpy==2.2.6
+pandas==2.3.0
+matplotlib==3.10.0
+
+# HTTP & Web (from Day1) 
+requests==2.32.3
+
+# AI/ML Libraries (from Day1)
+openai==1.84.0
+
+# Environment & Configuration (from Day1)
+python-dotenv==1.1.0
+
+# Jupyter & Interactive Computing (from Day1)
+ipython==8.29.0
+
+# New dependencies for Day2 advanced techniques
+# Token counting and text processing
+tiktoken==0.8.0
+
+# Retry logic and error handling
+tenacity==9.0.0
+
+# Threading and async operations
+# (concurrent.futures is built-in to Python 3.9+)
+
+# Type hints (for better code quality)
+typing-extensions==4.12.2
+
+# Rich output formatting and markdown rendering
+rich==13.9.4

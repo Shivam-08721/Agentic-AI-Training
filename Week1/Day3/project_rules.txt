@@ -1,0 +1,20 @@
+# Inventory Management Streamlit App - Cline Rules
+
+### Streamlit Best Practices
+- Use st.cache_data for expensive operations
+- Implement proper session state management
+- Use columns for better layout
+- Add loading spinners for long operations
+- Implement proper form validation with st.form
+
+### Data Visualization
+- Use Plotly for interactive charts
+
+## Deployment Considerations
+- Include requirements.txt with all dependencies
+- Add configuration for different environments
+- Include sample data for demonstration
+- Create clear installation and setup instructions
+
+
+

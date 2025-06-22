@@ -1,0 +1,134 @@
+{
+  "basic_prompts": [
+    {
+      "title": "Simple Question",
+      "content": "What is machine learning?",
+      "system_prompt": "You are a helpful AI assistant."
+    },
+    {
+      "title": "Code Generation",
+      "content": "Write a Python function to calculate the Fibonacci sequence",
+      "system_prompt": "You are a coding assistant. Provide clean, well-documented code with explanations."
+    },
+    {
+      "title": "Problem Solving",
+      "content": "I need to allocate students to groups based on their preferences. Each student ranks their top 3 choices out of 10 possible groups. How would you approach this problem?",
+      "system_prompt": "You are a problem-solving assistant. Provide practical solutions with clear reasoning."
+    },
+    {
+      "title": "Data Analysis",
+      "content": "I have customer data including age, purchase history, and location. What insights might I extract from this data?",
+      "system_prompt": "You are a data analysis expert. Suggest meaningful analyses and explain their business value."
+    }
+  ],
+  "chat_examples": [
+    {
+      "title": "Customer Support",
+      "messages": [
+        {"role": "system", "content": "You are a helpful customer support agent for a software company."},
+        {"role": "user", "content": "I can't log into my account. I keep getting an 'invalid password' error."},
+        {"role": "assistant", "content": "I'm sorry to hear you're having trouble logging in. Let's troubleshoot this together. Have you tried resetting your password using the 'Forgot Password' link on the login page?"},
+        {"role": "user", "content": "Yes, but I never receive the password reset email."}
+      ]
+    },
+    {
+      "title": "Product Recommendation",
+      "messages": [
+        {"role": "system", "content": "You are a knowledgeable product recommendation assistant for a tech store."},
+        {"role": "user", "content": "I need a new laptop for video editing. Budget is around $1500."},
+        {"role": "assistant", "content": "For video editing at a $1500 budget, you'll want to prioritize a powerful processor, sufficient RAM, and a good display. Here are some options I recommend:\n\n1. Dell XPS 15 - Great balance of performance and portability\n2. ASUS ROG Zephyrus G14 - Excellent CPU performance\n3. MacBook Air M2 - Great color accuracy and battery life\n\nWhat kind of video editing software do you plan to use?"},
+        {"role": "user", "content": "I use Adobe Premiere Pro mostly."}
+      ]
+    }
+  ],
+  "function_calling_examples": [
+    {
+      "title": "Weather Information",
+      "content": "What's the weather like in San Francisco?",
+      "functions": [
+        {
+          "name": "get_weather",
+          "description": "Get the current weather in a given location",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "location": {
+                "type": "string",
+                "description": "The city and state, e.g., San Francisco, CA"
+              },
+              "unit": {
+                "type": "string",
+                "enum": ["celsius", "fahrenheit"],
+                "description": "The temperature unit to use"
+              }
+            },
+            "required": ["location"]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Product Search",
+      "content": "Find me red Nike running shoes under $100",
+      "functions": [
+        {
+          "name": "search_products",
+          "description": "Search for products in the catalog",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string",
+                "description": "Search query terms"
+              },
+              "category": {
+                "type": "string",
+                "description": "Product category"
+              },
+              "brand": {
+                "type": "string",
+                "description": "Product brand"
+              },
+              "color": {
+                "type": "string",
+                "description": "Product color"
+              },
+              "max_price": {
+                "type": "number",
+                "description": "Maximum price"
+              },
+              "min_price": {
+                "type": "number",
+                "description": "Minimum price"
+              },
+              "sort_by": {
+                "type": "string",
+                "enum": ["price_asc", "price_desc", "relevance", "rating"],
+                "description": "How to sort the results"
+              }
+            },
+            "required": ["query"]
+          }
+        }
+      ]
+    }
+  ],
+  "system_prompt_examples": [
+    {
+      "title": "Neutral Assistant",
+      "system_prompt": "You are a helpful, harmless, and honest AI assistant. Answer user questions directly and concisely."
+    },
+    {
+      "title": "Math Tutor",
+      "system_prompt": "You are a patient math tutor. Explain concepts step by step and guide the student to the answer rather than providing it directly. Use examples where appropriate."
+    },
+    {
+      "title": "Technical Documentation Writer",
+      "system_prompt": "You are a technical documentation writer. Create clear, concise, and well-structured explanations for technical concepts. Use markdown formatting for headings, code blocks, and lists."
+    },
+    {
+      "title": "Socratic Teacher",
+      "system_prompt": "You are a Socratic teacher who helps students think critically. Ask thought-provoking questions to guide their reasoning rather than providing answers directly. Build on their responses to deepen understanding."
+    }
+  ]
+}

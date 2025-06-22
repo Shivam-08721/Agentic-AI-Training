@@ -1,0 +1,142 @@
+# Short Text
+This is a simple short text with very few tokens. It should be counted accurately.
+
+# Medium Text
+The field of artificial intelligence has seen remarkable progress in recent years, particularly with the advent of large language models. These models, trained on vast amounts of text data, can generate human-like text, translate languages, write different kinds of creative content, and answer your questions in an informative way. They are trained to follow instructions in a prompt and provide detailed responses.
+
+# Long Text
+The history of artificial intelligence (AI) began in antiquity, with myths, stories and rumors of artificial beings endowed with intelligence or consciousness by master craftsmen. The seeds of modern AI were planted by classical philosophers who attempted to describe the process of human thinking as the mechanical manipulation of symbols. This work culminated in the invention of the programmable digital computer in the 1940s, a machine based on the abstract essence of mathematical reasoning. This device and the ideas behind it inspired a handful of scientists to begin seriously discussing the possibility of building an electronic brain.
+
+The field of AI research was founded at a workshop held on the campus of Dartmouth College, USA during the summer of 1956. Those who attended would become the leaders of AI research for decades. Many of them predicted that a machine as intelligent as a human being would exist in no more than a generation, and they were given millions of dollars to make this vision come true.
+
+Eventually, it became obvious that they had grossly underestimated the difficulty of the project. In 1973, in response to the criticism from James Lighthill and ongoing pressure from the US Congress to fund more productive projects, both the U.S. and British governments cut off exploratory research in AI. The next few years would later be called an "AI winter", a period when obtaining funding for AI projects was difficult.
+
+In the early 1980s, AI research was revived by the commercial success of expert systems, a form of AI program that simulated the knowledge and analytical skills of human experts. By 1985, the market for AI had reached over a billion dollars. At the same time, Japan's fifth generation computer project inspired the U.S and British governments to restore funding for academic research. However, beginning with the collapse of the Lisp Machine market in 1987, AI once again fell into disrepute, and a second, longer-lasting winter began.
+
+Interest in neural networks and "connectionism" was revived by David Rumelhart and others in the middle of the 1980s. Backpropagation, first described by Paul Werbos in 1974, was popularized in the 1980s. Neural networks would later become an important part of AI.
+
+The 1990s saw some of the first attempts to apply AI techniques to the internet, with companies like LookSmart, Excite and others applying early natural language processing and database techniques to categorize and search web content.
+
+In the first decades of the 21st century, access to large amounts of data (known as "big data"), faster computers, and advanced machine learning techniques allowed AI to make significant advances. In 2011, IBM's Watson defeated Jeopardy champions Brad Rutter and Ken Jennings. In 2012, the ImageNet challenge showed the effectiveness of deep neural networks for image classification. By 2015, Google DeepMind's AlphaGo became the first computer Go program to beat a human professional player without handicaps on a full-sized 19×19 board.
+
+The 2020s have seen the emergence of powerful foundation models with capabilities that have impressed experts and the general public alike. Large language models like GPT-4, Claude, and others have demonstrated remarkable abilities in text generation, reasoning, and multimodal understanding, leading to widespread adoption of AI in various applications and renewed discussions about AI safety and governance.
+
+# Code Sample
+```python
+def count_tokens(text, model="gpt-4"):
+    """
+    Count the number of tokens in a given text using tiktoken.
+    
+    Args:
+        text: The text to count tokens for
+        model: The model to use for tokenization
+        
+    Returns:
+        The number of tokens in the text
+    """
+    import tiktoken
+    
+    # Get the encoding for the specified model
+    if model.startswith("gpt-4"):
+        encoding = tiktoken.encoding_for_model("gpt-4")
+    elif model.startswith("gpt-3.5"):
+        encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
+    else:
+        encoding = tiktoken.get_encoding("cl100k_base")  # Default to cl100k_base
+    
+    # Encode the text and count tokens
+    tokens = encoding.encode(text)
+    return len(tokens)
+
+# Example usage
+sample_text = "This is a test of the token counting function."
+token_count = count_tokens(sample_text)
+print(f"The text contains {token_count} tokens.")
+```
+
+# Chat Messages
+user: What is artificial intelligence?
+assistant: Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. It encompasses various technologies including machine learning, natural language processing, computer vision, and robotics. AI systems can perform tasks that typically require human intelligence such as visual perception, speech recognition, decision-making, and language translation.
+user: How is AI different from machine learning?
+assistant: Artificial Intelligence (AI) and Machine Learning (ML) are related but distinct concepts:
+
+1. AI is the broader concept of machines being able to carry out tasks in a way that we would consider "smart" or "intelligent." It's about creating systems that can simulate human intelligence.
+
+2. Machine Learning is a subset of AI. It's specifically focused on the idea that machines should be able to learn from data without being explicitly programmed. ML is based on algorithms that can learn from and make predictions or decisions based on data.
+
+3. Relationship: All machine learning is AI, but not all AI is machine learning. For example, early AI systems used hard-coded rules (like expert systems) rather than learning algorithms.
+
+4. Approach: Traditional AI might use rule-based programming, while ML uses statistical methods to enable machines to improve with experience.
+
+5. Deep Learning is a further subset of ML, focusing on neural networks with many layers (hence "deep") that can learn increasingly abstract patterns in data.
+
+So in essence, machine learning is a technique for realizing artificial intelligence, but AI is a broader concept that encompasses more than just learning from data.
+user: What are some real-world applications of AI?
+
+# Mathematical Text
+The Riemann hypothesis is one of the most important unsolved problems in mathematics. It concerns the distribution of the zeros of the Riemann zeta function ζ(s), which is defined for all complex numbers s ≠ 1. The Riemann zeta function is defined as:
+
+ζ(s) = ∑(n=1 to ∞) 1/n^s = 1/1^s + 1/2^s + 1/3^s + 1/4^s + ...
+
+When Re(s) > 1, this infinite sum converges. The function can be analytically continued to the entire complex plane except for a simple pole at s = 1.
+
+The Riemann hypothesis states that all non-trivial zeros of the zeta function have real part 1/2. In other words, if ζ(σ + it) = 0 and t ≠ 0, then σ = 1/2.
+
+This seemingly simple statement has profound implications for the distribution of prime numbers. If proven true, it would provide insights into how prime numbers are distributed among all integers.
+
+# Multilingual Text
+English: Hello, how are you doing today?
+Spanish: Hola, ¿cómo estás hoy?
+French: Bonjour, comment allez-vous aujourd'hui?
+German: Hallo, wie geht es Ihnen heute?
+Italian: Ciao, come stai oggi?
+Japanese: こんにちは、今日の調子はどうですか？
+Chinese: 你好，今天怎么样？
+Russian: Привет, как у тебя дела сегодня?
+Arabic: مرحبا، كيف حالك اليوم؟
+Hindi: नमस्ते, आज आप कैसे हैं?
+
+# JSON Data
+{
+  "user": {
+    "id": 12345,
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "preferences": {
+      "theme": "dark",
+      "notifications": true,
+      "language": "en-US"
+    },
+    "subscription": {
+      "plan": "premium",
+      "startDate": "2023-01-15",
+      "endDate": "2024-01-15",
+      "autoRenew": true
+    },
+    "activity": [
+      {
+        "type": "login",
+        "timestamp": "2023-06-01T08:30:45Z",
+        "ipAddress": "192.168.1.1"
+      },
+      {
+        "type": "purchase",
+        "timestamp": "2023-06-02T14:20:30Z",
+        "details": {
+          "productId": "prod-789",
+          "amount": 59.99,
+          "currency": "USD"
+        }
+      },
+      {
+        "type": "content_view",
+        "timestamp": "2023-06-03T19:15:10Z",
+        "details": {
+          "contentId": "article-456",
+          "timeSpent": 320,
+          "completed": true
+        }
+      }
+    ]
+  }
+}

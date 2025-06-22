@@ -1,0 +1,15 @@
+RISK FACTORS
+
+An investment in our common stock involves significant risks. You should carefully consider the following risk factors, together with all other information in this Form 10-K.
+
+Market Competition Risks
+We operate in highly competitive markets with rapidly evolving technology. Our competitors include large technology companies with significantly greater resources than us. If we fail to compete effectively, our business, financial condition, and results of operations could be materially adversely affected.
+
+Cybersecurity and Data Privacy Risks
+Our business involves the collection, storage, and transmission of sensitive customer data. Any security breach, unauthorized access, or data loss could result in significant financial losses, regulatory penalties, and damage to our reputation.
+
+Regulatory and Compliance Risks
+We are subject to various federal, state, and international laws and regulations. Changes in regulations, particularly in data privacy and financial services, could increase our compliance costs and limit our business operations.
+
+Economic and Market Risks
+Our business is subject to general economic conditions. Economic downturns, inflation, interest rate changes, and market volatility could negatively impact customer demand and our financial performance.
